@@ -1,0 +1,291 @@
+/* ===========================
+   GLOBAL
+=========================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #050816, #0b1120, #111827);
+  overflow-x: hidden;
+}
+
+/* ===========================
+   MAIN CONTAINER
+=========================== */
+
+.main {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 22px;
+  padding: 25px;
+}
+
+/* ===========================
+   IMAGES
+=========================== */
+
+#Siya {
+  width: 280px;
+  max-width: 90%;
+  animation: float 3s ease-in-out infinite;
+}
+
+#speak {
+  width: 140px;
+}
+
+#aigif {
+  width: 260px;
+}
+
+/* ===========================
+   FLOAT ANIMATION
+=========================== */
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-15px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* ===========================
+   TITLE
+=========================== */
+
+span {
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, #00e5ff, #00ffb3, #ffffff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ===========================
+   STATUS
+=========================== */
+
+h3 {
+  color: #00ffff;
+  font-weight: 500;
+  text-align: center;
+}
+
+/* ===========================
+   RESPONSE BOX
+=========================== */
+
+.response {
+  width: 95%;
+  max-width: 900px;
+
+  background: rgba(255, 255, 255, 0.08);
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+
+  backdrop-filter: blur(12px);
+
+  border-radius: 18px;
+
+  padding: 20px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 12px;
+
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.15);
+}
+
+/* ===========================
+   PARAGRAPH
+=========================== */
+
+p {
+  color: white;
+  line-height: 1.8;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+/* ===========================
+   BUTTON AREA
+=========================== */
+
+.button-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* ===========================
+   BUTTON
+=========================== */
+
+button {
+  width: 170px;
+  height: 55px;
+
+  border: none;
+
+  border-radius: 40px;
+
+  cursor: pointer;
+
+  color: white;
+
+  font-size: 18px;
+
+  font-weight: 600;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 12px;
+
+  transition: 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.06);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* ===========================
+   START BUTTON
+=========================== */
+
+.start-btn {
+  background: linear-gradient(45deg, #00c853, #00e676);
+  box-shadow: 0 0 20px #00e676;
+}
+
+/* ===========================
+   STOP BUTTON
+=========================== */
+
+.stop-btn {
+  background: linear-gradient(45deg, #ff1744, #ff5252);
+  box-shadow: 0 0 20px #ff5252;
+}
+
+/* ===========================
+   USER MESSAGE
+=========================== */
+
+.user-message {
+  width: 100%;
+  background: rgba(0, 255, 255, 0.08);
+  border-left: 5px solid #00ffff;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.user-message h3 {
+  color: #00ffff;
+  margin-bottom: 8px;
+}
+
+/* ===========================
+   AI MESSAGE
+=========================== */
+
+.ai-message {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.06);
+  border-left: 5px solid #00ff66;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.ai-message h3 {
+  color: #00ff66;
+  margin-bottom: 8px;
+}
+
+/* ===========================
+   SCROLLBAR
+=========================== */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #00e5ff;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #111827;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media (max-width: 768px) {
+  span {
+    font-size: 2rem;
+  }
+
+  #Siya {
+    width: 220px;
+  }
+
+  #aigif {
+    width: 180px;
+  }
+
+  #speak {
+    width: 120px;
+  }
+
+  .response {
+    width: 95%;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  button {
+    width: 145px;
+    height: 48px;
+    font-size: 16px;
+  }
+}
