@@ -1,14 +1,17 @@
 {
   "name": "virtual",
+  "homepage": "https://Pranay-debnath.github.io/virtual_assistant/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
-  },
+  "dev": "vite",
+  "build": "vite build",
+  "lint": "eslint .",
+  "preview": "vite preview",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist"
+},
   "dependencies": {
     "@google/genai": "^2.12.0",
     "react": "^19.2.7",
